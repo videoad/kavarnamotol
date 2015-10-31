@@ -249,39 +249,8 @@
 		<div class="events-info">
 			<h3>Kde nás najdete</h3>
 			<div class="border"></div>
-			<p><script src="//api.mapy.cz/loader.js"></script>
-<script>Loader.load();</script>
-<div id="mapa" style="width:500px; height:333px"></div>
-<script>
-    var center = SMap.Coords.fromWGS84(14.347911422927865, 50.07068686546799);
-    var mapa = new SMap(JAK.gel("mapa"), center, 16);
-    mapa.addDefaultLayer(SMap.DEF_BASE).enable();
-    var l = [];
-    for(var i = 1; i < l.length; i++) {
-        mapa.addDefaultLayer(l[i]).enable();
-    };
-    var scale = new SMap.Control.Scale();
-    mapa.addControl(scale, {left:"8px", bottom:"25px"});
-    var msOpt = SMap.MOUSE_PAN | SMap.MOUSE_WHEEL | SMap.MOUSE_ZOOM;
-    var mouse = new SMap.Control.Mouse(msOpt);
-    mapa.addControl(mouse);
-    var keyboard = new SMap.Control.Keyboard(SMap.KB_PAN | SMap.KB_ZOOM);
-    mapa.addControl(keyboard);
-    var selection = new SMap.Control.Selection(2);
-    mapa.addControl(selection);
-    var zn = new SMap.Control.ZoomNotification();
-    mapa.addControl(zn);
-    var zoomOpt = {showZoomMenu:false};
-    var zoom = new SMap.Control.Zoom(null,{titles:["Přiblížit", "Oddálit"], showZoomMenu:false});
-    mapa.addControl(zoom, {right:"2px", top:"10x"});
-    var lnt = "Zobrazit na mapy.cz";
-    var lnd = JAK.mel("a", {href:"http://mapy.cz/s/mgwG", target:"_blank", innerHTML:lnt});
-    lnd.style.cssText = "position:absolute;left:8px; bottom:54px;"+
-    "display:block; padding:4px 8px; background-color:#fff; border:medium none;"+
-    "border-radius:3px; box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);"+
-    "text-decoration:none; color:#6b7580;";
-    mapa.getContainer().appendChild(lnd);
-</script></p>
+			<p>
+			<iframe src="//api.mapy.cz/frame?params=%7B%22x%22%3A14.348415678222665%2C%22y%22%3A50.07117922752726%2C%22base%22%3A%221%22%2C%22layers%22%3A%5B%5D%2C%22zoom%22%3A17%2C%22url%22%3A%22http%3A%2F%2Fmapy.cz%2Fs%2FmgwG%22%2C%22mark%22%3Anull%2C%22overview%22%3Afalse%7D&amp;width=80%&amp;height=333" width="80%" height="333" style="border:none" frameBorder="0"></iframe></p>
 		</div>
 	</div>
 </div>
